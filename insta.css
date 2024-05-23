@@ -1,0 +1,139 @@
+body,html{
+    margin: 2%;
+}
+
+.main{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 0%;
+   /* flex:1; */
+}
+
+/* .left-container{
+
+} */
+
+.right-container{width: 50vh; height: 50vh;}
+
+.login-form{
+    text-align: center;
+    border: 2px solid RGB(232 232 232);
+    padding: 5%;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid RGB(232 232 232);
+    text-align: center;
+    width: 50vh; height: 5vh;
+    transform: translateY(5px);
+}
+
+.signUp-text{
+    color: rgb(0,162,248);
+    font-weight: bold;
+    transform : rotate(0.04deg); transform: translateX(5px);  
+}
+
+.downloadCTA, .downloadCTA2{text-align: center;}
+
+.id-password-form{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.id-input, .id-input2{
+    background-color: rgb(250,250,250);
+    border: 1px solid gray;
+    width: 300px; 
+}
+
+.login-btn{
+    background-color: rgb(76,181,249);
+    color: white;
+    border: none; border-radius: 1vh;
+    font-weight: bold;
+    margin: 2%;
+    width: 300px;
+}
+
+.hr-sect{ display: flex; 
+    flex-basis: 100%; 
+    align-items: center;
+    color: rgba(136, 136, 136, 1);
+    font-weight: bold;
+}
+.hr-sect::before, .hr-sect::after {
+    content: ""; 
+    flex-grow: 1; 
+    background: rgba(136, 136, 136, 0.35); 
+    height: 1px; 
+    font-size: 0px; line-height: 0px; 
+    margin: 0px 15px;
+}
+
+.facebook-login-div{margin: 10%;}
+
+#facebook-logo{
+    width: 2vh; 
+    transform: 
+    translateY(3px);
+}
+
+.facebook-login{
+    color: rgb(56,81,133);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.forgot-password{
+    transform: translateY(30px);
+    font-size: 14px;
+}
+
+.googlePlay-logo{width: 15vh;}
+.microsoft-logo{width: 12vh;}
+.microsoft-logo:hover{cursor: pointer;}
+
+.article{border: 1px solid gray;}
+
+.downloadCTA{margin: 5%;}
+
+.footer{
+    text-align: center; 
+    transform: translateY(150px); 
+    flex-shrink: 0;
+}
+
+/* footer classes*/
+
+.footer-div, .footer-div2{
+    text-decoration: none; 
+    color: rgb(130,140,150);
+}
+
+select{
+    text-decoration: none; 
+    color: rgb(130,140,150);
+}
+
+a{text-decoration: none;}
+
+@media screen and (max-width:920px) { 
+    .left-container{
+        display:none;
+    }
+}
