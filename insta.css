@@ -1,15 +1,8 @@
-body,html{
-    margin: 2%;
-}
-
 .main{
    display: flex;
-   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   flex-grow: 1;
-   flex-shrink: 1;
-   flex-basis: 0%;
+   margin-top: 50px;
    /* flex:1; */
 }
 
@@ -54,10 +47,12 @@ body,html{
     flex-direction: column;
 }
 
-.id-input, .id-input2{
+.input{
     background-color: rgb(250,250,250);
     border: 1px solid gray;
     width: 300px; 
+    outline: none;
+    border-radius: 0.2ch;
 }
 
 .login-btn{
@@ -84,7 +79,7 @@ body,html{
     margin: 0px 15px;
 }
 
-.facebook-login-div{margin: 10%;}
+.facebook-login-div{margin: 5%;}
 
 #facebook-logo{
     width: 2vh; 
@@ -100,7 +95,7 @@ body,html{
 }
 
 .forgot-password{
-    transform: translateY(30px);
+    margin-top: 20px;
     font-size: 14px;
 }
 
@@ -114,8 +109,8 @@ body,html{
 
 .footer{
     text-align: center; 
-    transform: translateY(150px); 
     flex-shrink: 0;
+    margin-top: 150px;
 }
 
 /* footer classes*/
@@ -123,7 +118,10 @@ body,html{
 .footer-div, .footer-div2{
     text-decoration: none; 
     color: rgb(130,140,150);
+    font-size: 14px;
 }
+
+.footer-div2{margin-top: 10px;}
 
 select{
     text-decoration: none; 
