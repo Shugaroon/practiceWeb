@@ -1,32 +1,32 @@
 html,body{
-    height: 100vh;
+    height: 100%;
+    margin: 0;
 }
+ol, ul, li {list-style: none;}
+a { text-decoration: none; color: inherit; }
 
-.headerTop1{
+/* .headerTop1{
     border-bottom:3px solid rgb(121,82,179);
-}
-.goPreviousPage{
+} */
+/* .goPreviousPage{
     margin-top: 30px;
-}
-.headerTop2{
+} */
+/* .headerTop2{
     display: flex;
     justify-content: flex-end;
-}
-.mainTop{
+} */
+/* .mainTop{
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-#headerSelect{
+} */
+/* #headerSelect{
     border: none;
     font-size: 12px;
 }
 .headerItem{
     font-size: 12px;
 }
-a{
-    text-decoration: none;
-    color: inherit;
-}
+
 .cartBtn{
     border: 0px;
     background-color: rgb(121,82,179);
@@ -36,54 +36,62 @@ a{
 }
 .cartBtnSpan{
     font-size: 14px;
-}
-.headerBottom{
+} */
+/* .headerBottom{
     display: flex;
-}
-ul li{
-    list-style: none;
-}
+} */
 
-.mainTop{
+/* .mainTop{
     background-color: white;
 }
 .mainTopDiv select{
     border: none;
-}
+} */
 
 .carousel{
-    height: 70vh; width: 100%;
+    height: 100vh;
     background-color: lightblue;
+    /* overflow: hidden; */
+    /* position: relative; */
 }
-
 .nav{
     display: flex;
-    justify-content: space-around;
-    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.navUl{
+    display: flex;
+    justify-content: center;
     color: white;
 }
-.nav:hover{
-    background-color: white;
-    color: inherit
+
+.navUl li{
+    padding: 2em;
 }
+
+.navUl:hover{
+    background-color: white;
+    color: black;
+}
+
+.nav2{
+    transform: translateX(200px);
+    color: white; /* 버그: nav:hover시 */
+}
+    
 
 .arrowDiv{
-}
-
-#arrowLeftSpan{
-    width: 10px;
-}
-
-
-
-#left{
     display: flex;
-    align-items: center;
-}
-#right{
-    display: flex;
-    justify-content: right;
-    align-items: center;
+    justify-content: space-between;
+    color: white;
+    transform: translateY(500%);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
 }
 
 #sellLogoBox{
@@ -96,40 +104,131 @@ ul li{
     justify-content: center;
     align-items: center;
     color: white;
+    height: 100%;
 }
 
-.carouselBtnDiv{
+.textDiv{
+    text-align: center;
+    transform: translateY(-200px);
+}
+
+.carouselDiv div{
+    text-align: center;
+}
+
+.carouselDiv div p{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carouselBtn{
+    font-size: 14px;
+    background-color: white;
+    border-style: none;
+    padding: 10px;
+    letter-spacing: 0.2em;
 }
 
 .picksNewArrivals{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:20px;
-    background-color:beige;
     height: 100%;
 }
 
 .picksNewArrivals div img{
-    height: 100%; width: 100%;
-}
-
-.footer{
-    padding: 30px;
     display: grid;
-    grid-template-rows: 4fr 1fr;
-    background-color: gray;
 }
 
-.topFooter{
-    background-color: rgb(222,226,230);
+.bottomPics{
+    height: 70vh;
+}
+
+.bottomPicsItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomPicsBtn{
+    border-style: hidden;
+    padding: 10px;
+    font-size: 12px;
+    width: 150px;
+    letter-spacing: 0.3em;
+}
+.bottomPicsBtn:hover{
+    cursor: pointer;
+    background-color: tomato;
+}
+
+.ShopNowBtn{
+    display: flex;
+    justify-content: center;
+    border-style: none;
+    padding: 10px;
+    
+}
+
+.bottomPicsDiv{
     display: flex;
     flex-direction: column;
+    font-size: 32px;
+    
 }
 
-.bottomFooter{
+.bottomPics{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.bottomPics2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+}
+
+.middle-footer{
+    display: flex;
+    justify-content: center;    
+}
+
+.top-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 15%;
+    margin-left: 15%;
+}
+
+.middle-footer{
+    background-color: rgb(222,226,230);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 7em;
+}
+
+#emailInputBox{
+    background-color: rgb(222,226,230);
+    width: 400px;
+    height: 30px;
+    border:1px solid black;
+}
+
+.bottom-footer{
     background-color: rgb(52,58,64);
 }
 
+.modal{
+    height: 200px; width: 200px;
+    border:1px solid gray;
+    display: none;
+}
+
+
+@media screen and (max-width:956px){
+    .nav{
+        display: none;
+    }
+}
