@@ -1,0 +1,22 @@
+.all_container{
+    text-align: center;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.container{
+    border: 1px solid gray;
+    margin: 10px;
+}
+
+.apple_container{
+    background-color: lightcoral;
+}
+
+.banana_container{
+    background-color: yellow;
+}
+
+.cherry_container{
+    background-color: brown;
+}
