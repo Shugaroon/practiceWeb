@@ -1,0 +1,16 @@
+html, body{
+    margin: 0;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+        'img1 img1 img2 aside'
+        'main main main aside';
+    height: 100vh;
+    grid-gap:20px;
+    text-align: center;
+}

@@ -1,0 +1,8 @@
+.image1{
+    background-color: darkgray;
+    grid-area: img1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+}

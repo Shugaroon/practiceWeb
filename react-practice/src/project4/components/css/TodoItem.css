@@ -1,0 +1,34 @@
+.toDoItem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.toDoItem .title_col{
+    flex: 1;
+}
+
+.toDoItem .checkbox_col{
+    width: 20px;
+}
+
+.toDoItem .deleteBtn{
+    background-color: tomato;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+}
+.toDoItem .deleteBtn:hover{
+    cursor: pointer;
+    background-color: tomato;
+    transform: scale(1.1);
+}
+
+
+.toDoItem .date_col{
+    font-size: 12px;
+}

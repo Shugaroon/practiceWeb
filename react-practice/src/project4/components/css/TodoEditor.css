@@ -1,0 +1,25 @@
+.editor_wrapper>input{
+    outline: none;
+    width: 250px;
+    border: 1px solid gray;
+}
+
+.toDoEditor .editor_wrapper{
+    display: flex;
+    justify-content: center;
+    transform: translateX(10px);
+    gap: 10px;
+}
+
+.editor_wrapper>button{
+    background-color: skyblue;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+}
+.editor_wrapper>button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}

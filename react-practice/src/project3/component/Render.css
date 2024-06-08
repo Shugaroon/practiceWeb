@@ -1,0 +1,38 @@
+.container{
+    margin-top: 150px;
+    text-align: center;
+    align-items: center;
+}
+
+.countContainer{
+    text-align: center;
+    background-color: lightgray;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: pink;
+}
+
+.btnContainer>button{
+    background-color: white;
+    border-style: none;
+    border-radius: 10%;
+    margin: 10px;
+    color: tomato;
+}
+
+.btnContainer>button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    /* animation: fly-horizon */
+}
+.btnContainer>.resetBtn{
+    color: black;
+}
+
+.btnContainer>.plusBtn{
+    color: blue;
+}

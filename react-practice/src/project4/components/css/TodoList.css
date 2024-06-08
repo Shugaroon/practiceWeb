@@ -1,0 +1,24 @@
+.toDoList input{
+    outline: none;
+}
+
+.toDoList .list_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.toDoList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.searchBar{
+    border: none;
+    margin: 0 auto;
+    /* width: 100px */
+}
+
+.serachBar::before{
+   
+}

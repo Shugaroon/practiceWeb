@@ -1,0 +1,12 @@
+.mainContainer{
+    grid-area: main;
+}
+
+.cardContainer{
+    background-color: cornflowerblue;
+}
+
+.aside{
+    background-color: beige;
+}
+
